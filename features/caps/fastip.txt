@@ -1,0 +1,4 @@
+[caps]
+deviceName =  "MotoG"
+platformName = "Android"
+app = "~/Desktop/fastip-specs/features/support/FasTip.apk"
