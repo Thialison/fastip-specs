@@ -60,9 +60,8 @@ gem install bundler
 ### Running the project :dart:
 
 ```ruby
-1. Clone the project in your Desktop folder, 
-if you want to clone in another folder you need to change the value app in the file caps/fastip.txt:
-   git clone https://github.com/Thialison/fastip-specs.git
+1. Clone this project in your Desktop folder, 
+if you want to clone in another folder you need to change the value app in the file caps/fastip.txt.
 
 2. Access the project folder on Terminal and run:
    bundle
