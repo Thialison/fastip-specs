@@ -1,69 +1,70 @@
-# Calculator-Specs-Screen Objects
-Basic structure Appium android project
+# FasTip-specs
+Basic structure android Appium project
 
-### Instalando Ambiente no Mac
+### Installing Ruby and Rbenv
 
 ```ruby
-a. Instalar o Homebrew:
+a. Install Homebrew:
    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"r
    
-b. Instalar JDK para o Mac:
+b. Install JDK:
    http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-c. Instalando e configurando o rbenv:
+c. Install rbenv:
    brew install rbenv
    echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
    rbenv install -l
-   rbenv install 2.4.0 #Ou versão superior estável
+   rbenv install 2.4.0
    rbenv local 2.4.0
 
-d. Instalar Android Studio
+d. Installing Android Studio
    https://developer.android.com/studio/index.html?hl=pt-br
    
-e. Instalar Appium Desktop
-   http://appium.io/ => Clique em download e baixe a versão mais recente para o seu SO
+e. Installing Appium Desktop
+   http://appium.io/ => Click in download
 ```
 
-### Variáveis de Ambiente JAVA
+### Java Environment Variables
 ```ruby
-Abrir arquivo de configuração
+In your terminal run:
 open ~/.bash_profile
 
-Preencher com:
+Fill the file with:
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$JAVA_HOME/bin:$PATH 
 ```
 
-### Variáveis de Ambiente do Android
+### Android Environment Variables
 
 ```ruby
-Abrir arquivo de configuração
+In your terminal run:
 open ~/.bash_profile
 
-Preencher com:
-export ANDROID_HOME=/Users/<usuario>/Library/Android/sdk
+Fill the file with:
+export ANDROID_HOME=/Users/<user>/Library/Android/sdk
 export PATH=$ANDROID_HOME/tools/bin:$PATH
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$ANDROID_HOME/platform-tools:$PATH
 export PATH=$ANDROID_HOME/platform-tools/adb:$PATH
 export PATH=$ANDROID_HOME/emulator/:$PATH
 
-NOTE: Trocar o <usuario> pelo nome do seu usuário
+NOTE: Change the <user> by the name of your user
 ```
 
-### Instalando Gerenciador de gems do Ruby
+### Installing the Ruby gem manager
 
 ```ruby
 gem install bundler
 ```
 
-### Executando o Projeto :dart:
+### Running the project :dart:
 
 ```ruby
-1. Faça um clone do projeto dentro da pasta Desktop, if you want to clone in another folder you need to change the file caps/fastip.txt the value app:
-   git clone https://github.com/Thialison/calculator-specs.git
+1. Clone the project in your Desktop folder, 
+if you want to clone in another folder you need to change the value app in the file caps/fastip.txt:
+   git clone https://github.com/Thialison/fastip-specs.git
 
-2. Acesse a pasta pelo terminal e execute o comando:
+2. Access the project folder on Terminal and run:
    bundle
 
 3. Open your emulator or connect your real device.
